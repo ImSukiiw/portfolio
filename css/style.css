@@ -291,8 +291,9 @@ ul {
 
 .title-about {
     margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
     font-weight: bold;
     color: black;
 }
@@ -301,6 +302,19 @@ ul {
     color: black;
     text-align: justify;
     font-weight: 500;
+}
+
+.button-cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    transition: all 0.5s ease;
+}
+
+.button-cv:hover {
+    color: rgb(48, 48, 162);
+    transition: all 0.5s ease;
 }
 
 
@@ -327,6 +341,15 @@ ul {
     padding: 10px;
     border-bottom: solid 1px black;
 
+}
+
+.title-skills {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-weight: bold;
+    color: black;
 }
 
 /* projets */
@@ -356,6 +379,10 @@ ul {
     gap: 5px;
 }
 
+.projet {
+    margin-bottom: 1.5rem;
+}
+
 .projcontainer .projet:hover img {
     filter: brightness(0.7);
     transition: all 0.5s ease;
@@ -370,8 +397,13 @@ ul {
 
 }
 
-.projtitle
-{margin-bottom: 2rem;
+.projtitle {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-weight: bold;
+    color: black;
 }
 
 
@@ -389,6 +421,20 @@ ul {
     width: 100%;
     height: 500px;
     object-fit: cover;
+}
+
+.liens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    transition: all 0.5s ease;
+}
+
+.liens:hover {
+    color: rgb(48, 48, 162);
+    transition: all 0.5s ease;
 }
 
 .projet-detail section .liens a {
@@ -410,7 +456,6 @@ ul {
 .projet-detail section iframe {
     width: 100%;
     height: 500px;
-
 }
 
 
