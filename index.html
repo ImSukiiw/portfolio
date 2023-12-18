@@ -14,6 +14,11 @@
     <!-- favicons et titre -->
     <link rel="icon" type="image/ico" href="./img/icon/favicon.ico">
     <title>Portfolio | Maxime Scholtes</title>
+
+    <!-- css et js curseur -->
+
+    <script src="https://seattleowl.com/pointer.js/pointer.js"></script>
+    <link href="https://seattleowl.com/pointer.js/pointer.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,7 +34,7 @@
 
         <nav class="navigation">
             <a href="#" class="active" style="--i:0;">Accueil</a>
-            <a href="./apropos.html" style="--i:1;">À propos</a>
+            <a href="#apropos" style="--i:1;">À propos</a>
             <a href="#projets" style="--i:2;">Projets</a>
         </nav>
     </nav>
@@ -38,28 +43,35 @@
     <section>
         <header class="header" id="header">
             <div class="titre">
-                <h1 class="line-1">UX/UI Designer</h1>
-                <h1 class="line-2">& Monteur Vidéo.</h1>
+                <h1 class="landind-title">UX/UI Designer</h1>
+                <h1 class="landind-title">& Monteur Vidéo.</h1>
+
+                <a href="#apropos" class="scroll-down-btn">voir la suite&nbsp;&nbsp;
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/>
+                    </svg>
+                </a>
             </div>
         </header>
     </section>
 
     <section class="apropos" id="apropos">
         <div>
-            <img class="img-apropos" src="./img/photo-about.jpg" alt="">
+            <img class="img-apropos" src="./img/photo-about.png" alt="">
             <div>
-                <h2>Qui suis-je ?</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet nisi ullamcorper, aliquam
-                    purus vel, ornare quam. Aliquam eu ante consequat, cursus odio ac, gravida mi. Nulla et dolor vel
-                    arcu varius volutpat. Nulla tempor vitae elit a rhoncus. Ut at diam accumsan, finibus nisi sit amet,
+                <h2 class="title-about">À propos</h2>
+                <p class="txt-about">Bonjour je me présente, Maxime Scholtes ! Actuellement en deuxième année de BUT MMI (Métiers du Multimédia et de l’Internet) à l’IUT Gustave Eiffel à Champs-sur-Marne. La première année de BUT m'a permis de découvrir les métiers du numérique et d’acquérir les fondamentaux dans différents domaines tels que le développement web, la production audiovisuelle, le graphisme ou encore la communication. J'aime beaucoup la polyvalence de cette formation et c'est ce qui m'a attirer vers ce choix, je suis une personne qui touche à tout et qui s'intéresse à tout !
+                <br>
+                J'aime beaucoup travailler en équipe, j'ai pu développé cette qualité durant mon Baccalauréat STI2D où on devait énormément travailler en groupe, mais aussi durant mes années de sport tel que le basket où on devait travailler en équipe.
                 </p>
             </div>
             <div>
-                <a class="button-apropos" href="./apropos.html">En découvrir plus</a>
+                <a class="button-cv" href="/docs/cv-maxime-scholtes.pdf">Télécharger mon CV</a>
             </div>
         </div>
     </section>
 
+    <!-- skills 
     <section class="skills" id="skills">
         <div class="colonne-comp">
             <div>
@@ -93,8 +105,24 @@
                 </ul>
             </div>
         </div>
+    </section>-->
+
+    <section class="projets" id="projets">
+        <h1 class="projtitle">Mes Projets</h1>
+        <div>
+            <div class="projcontainer">
+                <a href="/projets/saveearty.html" class="linksaveearty" id="linksaveearty">
+                    <div class="projbloc">
+                        <h2 class="txtbloc" id="titlesaveearty"></h2>
+                        <div>
+                            <p>Nuit de l'info 2023</p>
+                            <p>Création Numérique</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </section>
 
 </body>
-
 </html>
